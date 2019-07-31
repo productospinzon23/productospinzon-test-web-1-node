@@ -17,7 +17,7 @@ const forecast = (latitude, longitude, callback) => {
             + body.currently.temperature 
             + ' grados. Hay '
             + body.currently.precipProbability 
-            + '% de probabilidad de lluvia.')
+            + '% de probabilidad de lluvia. ' + body.daily.summary )
         }
     })
 }
